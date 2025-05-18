@@ -1,30 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <style>
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
 
-        100% {
-          opacity: 1;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <title>Vinayak Gupta - Portfolio</title>
+  <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
       }
 
-      .fade-in {
-        animation: fadeIn 2s ease-in;
+      100% {
+        opacity: 1;
       }
-      .list-style{
-        padding: 15px;
-      }
-    </style>
-  </head>
+    }
 
-  <body>
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+
+    .list-style {
+      padding: 15px;
+    }
+
+    .content {
+      position: relative;
+      padding: 20px;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Use a pseudo-element for transparency control */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-image: url('assets/backgroung.png');
+      /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.05;
+      /* 50% transparency */
+      z-index: -1;
+      /* Ensure it's behind the content */
+      pointer-events: none;
+      /* So it doesn’t block clicks */
+    }
+
+    span {
+      margin-left: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
     <header>
       <h1>Vinayak Gupta</h1>
       <p class="fade-in">
@@ -45,7 +87,7 @@
       <ul>
         <li>
           <strong>Director of Engineering and Systems Design</strong><br />
-          Meodoc Health IT - Feb 2023 <br />
+          <u> Meodoc Health IT - Feb 2023</u> <br />
           <ul class="list-style">
             <li>
               Supported the technical integration for the onboarding of 3
@@ -80,8 +122,8 @@
         </li>
         <li>
           <strong>Freelance Developer</strong><br />
-          Appable Technologies Pvt. Ltd. - Jul 2023 - Jun 2024 <br />
-          <ul>
+          <u> Appable Technologies Pvt. Ltd. - Jul 2023 - Jun 2024</u> <br />
+          <ul class="list-style">
             <li>
               Developed Cross-platform apps utilizing REST APIs, Geotracking and
               Google Maps.
@@ -120,35 +162,59 @@
       <ul>
         <li>
           <strong>LinkedIn:</strong>
-          <a
-            href="https://www.linkedin.com/in/vinayak-gupta-70a808202/"
-            target="_blank"
-            >Visit my LinkedIn</a
-          >
+          <a href="https://www.linkedin.com/in/vinayak-gupta-70a808202/" target="_blank">Visit my LinkedIn</a>
         </li>
         <li>
           <strong>GitHub:</strong>
-          <a href="https://github.com/vinayakgupta29" target="_blank"
-            >Peek at my GitHub</a
-          >
+          <a href="https://github.com/vinayakgupta29" target="_blank">Peek at my GitHub</a>
         </li>
         <li>
           <strong>Email:</strong>
-          <a href="mailto:vinayakg236@gmail.com" target="_blank"
-            >vinayakg236@gmail.com</a
-          >
+          <a href="mailto:vinayakg236@gmail.com" target="_blank">vinayakg236@gmail.com</a>
         </li>
         <li>
           <strong>Blog:</strong>
-          <a href="https://medium.com/@vinayakg236" target="_blank"
-            >Visit my Blog</a
-          >
+          <a href="https://medium.com/@vinayakg236" target="_blank">Visit my Blog</a>
         </li>
       </ul>
     </section>
-
+    <section id="projects">
+      <h2>Projects</h2>
+      <ol>
+        <li><em>Personal Bahi Khata : </em> <i>Flutter | Encryption</i><span>
+            <a href="https://github.com/vinayakgupta29/bahi_khata" target="_blank"><img
+                src="https://img.shields.io/badge/github-%23ffffff.svg?style=for-the-badge&logo=github&logoColor=550055"
+                alt="Personal Bahi Khata" srcset="" height="20px"></a>
+            <a href="https://play.google.com/store/apps/developer?id=Vins+Dev" target="_blank"><img alt="Play Store"
+                title="Play Store"
+                src="https://img.shields.io/badge/Google%20Play%20Store-%234CAF50.svg?&style=for-the-badge&logo=google-play&logoColor=white"
+                height="20px" /></a>
+          </span>
+          <p>A user-centered mobile application for personal expense tracking, featuring a secure interface,
+            customizable
+            tagging, and robust data encryption. Successfully launched on the Google Play Store with positive user
+            feedback</p>
+        </li>
+        <li><em>Directory of Interger Sequences</em><i>: Python | Data Science</i><span><a
+              href="https://github.com/vinayakgupta29/A-directory-of-integer-sequences" target="_blank"><img
+                src="https://img.shields.io/badge/github-%23ffffff.svg?style=for-the-badge&logo=github&logoColor=550055"
+                alt="Directory of Interger Sequences" srcset="" height="20px"></a>
+          </span>
+          <p>A Python-based interactive tool that explores the world of integer sequences. It provides a comprehensive
+            directory of sequences with analysis tools for discovery and investigation.
+          <ul>
+            <li>Curated collection of integer sequences with detailed explanations.</li>
+            <li>Tools for data manipulation and visualization using Python.</li>
+            <li>Explores real-world applications of integer sequences in computational science.</li>
+          </ul>
+          <b> Target Audience </b> : Students, researchers, and anyone interested in integer sequences.</p>
+        </li>
+      </ol>
+    </section>
     <footer>
       <p>© 2024 Vinayak Gupta. UwU All rights reserved.</p>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>

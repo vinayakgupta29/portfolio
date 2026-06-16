@@ -1,1779 +1,1701 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Vinayak Gupta - backend and systems engineer, full stack developer, Linux user, and physics student building healthcare, automation, encryption, accounting, data, and tooling projects."
-    />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <title>Vinayak Gupta | Portfolio</title>
-    <script>
-      document.documentElement.classList.add("js");
-    </script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap");
 
-      :root {
-        color-scheme: dark;
-        --paper: #0d1618;
-        --paper-soft: #132327;
-        --surface: rgba(18, 31, 35, 0.76);
-        --surface-strong: rgba(25, 43, 47, 0.9);
-        --surface-soft: rgba(27, 46, 50, 0.58);
-        --ink: #f4efe2;
-        --muted: #9fb2aa;
-        --line: rgba(232, 224, 199, 0.15);
-        --teal: #36d6b5;
-        --teal-deep: #7ddfd0;
-        --rust: #f4a340;
-        --blue: #73a8ff;
-        --berry: #e879a7;
-        --charcoal: #d8e3db;
-        --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
-        --radius: 8px;
-        --max: 1160px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Vinayak Gupta - backend and systems engineer, full stack developer, Linux user, and physics student building healthcare, automation, encryption, accounting, data, and tooling projects." />
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <title>Vinayak Gupta | Portfolio</title>
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap");
 
-      * {
-        box-sizing: border-box;
-      }
+    :root {
+      color-scheme: dark;
+      --paper: #0d1618;
+      --paper-soft: #132327;
+      --surface: rgba(18, 31, 35, 0.76);
+      --surface-strong: rgba(25, 43, 47, 0.9);
+      --surface-soft: rgba(27, 46, 50, 0.58);
+      --ink: #f4efe2;
+      --muted: #9fb2aa;
+      --line: rgba(232, 224, 199, 0.15);
+      --teal: #36d6b5;
+      --teal-deep: #7ddfd0;
+      --rust: #f4a340;
+      --blue: #73a8ff;
+      --berry: #e879a7;
+      --charcoal: #d8e3db;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+      --radius: 8px;
+      --max: 1160px;
+    }
 
-      html {
-        scroll-behavior: smooth;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background:
-          linear-gradient(135deg, rgba(18, 138, 122, 0.34) 0%, transparent 34%),
-          linear-gradient(315deg, rgba(244, 163, 64, 0.18) 0%, transparent 38%),
-          linear-gradient(
-            180deg,
-            rgba(115, 168, 255, 0.12) 0%,
-            transparent 42%
-          ),
-          var(--paper);
-        color: var(--ink);
-        font-family: "Manrope", "Trebuchet MS", sans-serif;
-        line-height: 1.65;
-      }
+    html {
+      scroll-behavior: smooth;
+    }
 
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -2;
-        background-image: url("./assets/backgroung.png");
-        background-position: center;
-        background-size: cover;
-        opacity: 0.08;
-        mix-blend-mode: screen;
-        pointer-events: none;
-      }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(135deg, rgba(18, 138, 122, 0.34) 0%, transparent 34%),
+        linear-gradient(315deg, rgba(244, 163, 64, 0.18) 0%, transparent 38%),
+        linear-gradient(180deg,
+          rgba(115, 168, 255, 0.12) 0%,
+          transparent 42%),
+        var(--paper);
+      color: var(--ink);
+      font-family: "Manrope", "Trebuchet MS", sans-serif;
+      line-height: 1.65;
+    }
 
-      body::after {
-        content: "";
-        position: fixed;
-        inset: 0;
-        z-index: -1;
-        background-image:
-          linear-gradient(rgba(244, 239, 226, 0.045) 1px, transparent 1px),
-          linear-gradient(
-            90deg,
-            rgba(244, 239, 226, 0.045) 1px,
-            transparent 1px
-          );
-        background-size: 42px 42px;
-        mask-image: linear-gradient(to bottom, black, transparent 78%);
-        pointer-events: none;
-      }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background-image: url("./assets/backgroung.png");
+      background-position: center;
+      background-size: cover;
+      opacity: 0.08;
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
 
-      a {
-        color: inherit;
-        text-decoration-color: rgba(54, 214, 181, 0.42);
-        text-underline-offset: 0.18em;
-        transition:
-          color 180ms ease,
-          text-decoration-color 180ms ease,
-          transform 180ms ease;
-      }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image:
+        linear-gradient(rgba(244, 239, 226, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg,
+          rgba(244, 239, 226, 0.045) 1px,
+          transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 78%);
+      pointer-events: none;
+    }
 
-      a:hover {
-        color: var(--teal-deep);
-        text-decoration-color: currentColor;
-      }
+    a {
+      color: inherit;
+      text-decoration-color: rgba(54, 214, 181, 0.42);
+      text-underline-offset: 0.18em;
+      transition:
+        color 180ms ease,
+        text-decoration-color 180ms ease,
+        transform 180ms ease;
+    }
 
-      .site-shell {
-        width: min(100% - 32px, var(--max));
-        margin: 0 auto;
-      }
+    a:hover {
+      color: var(--teal-deep);
+      text-decoration-color: currentColor;
+    }
 
-      .skip-link {
-        position: absolute;
-        left: 16px;
-        top: -80px;
-        z-index: 20;
-        padding: 10px 14px;
-        background: var(--teal);
-        color: #08211f;
-        border-radius: var(--radius);
-      }
+    .site-shell {
+      width: min(100% - 32px, var(--max));
+      margin: 0 auto;
+    }
 
-      .skip-link:focus {
-        top: 16px;
-      }
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 20;
+      padding: 10px 14px;
+      background: var(--teal);
+      color: #08211f;
+      border-radius: var(--radius);
+    }
 
-      .topbar {
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        backdrop-filter: blur(18px);
-        background: rgba(10, 20, 22, 0.82);
-        border-bottom: 1px solid var(--line);
-      }
+    .skip-link:focus {
+      top: 16px;
+    }
 
-      .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 72px;
-        gap: 24px;
-      }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(18px);
+      background: rgba(10, 20, 22, 0.82);
+      border-bottom: 1px solid var(--line);
+    }
 
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        font-weight: 800;
-        text-decoration: none;
-        letter-spacing: 0;
-      }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 24px;
+    }
 
-      .brand-mark {
-        display: grid;
-        width: 38px;
-        aspect-ratio: 1;
-        place-items: center;
-        border: 1px solid rgba(54, 214, 181, 0.42);
-        border-radius: var(--radius);
-        background: linear-gradient(
-          135deg,
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      aspect-ratio: 1;
+      place-items: center;
+      border: 1px solid rgba(54, 214, 181, 0.42);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg,
           rgba(54, 214, 181, 0.16),
-          rgba(115, 168, 255, 0.12)
-        );
-        color: var(--teal-deep);
-        font-family: "Fraunces", Georgia, serif;
-        font-weight: 700;
-        box-shadow: 6px 6px 0 rgba(244, 163, 64, 0.16);
-      }
+          rgba(115, 168, 255, 0.12));
+      color: var(--teal-deep);
+      font-family: "Fraunces", Georgia, serif;
+      font-weight: 700;
+      box-shadow: 6px 6px 0 rgba(244, 163, 64, 0.16);
+    }
 
-      .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-      }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-      .nav-links a,
-      .button,
-      .filter-button {
-        border: 1px solid transparent;
-        border-radius: var(--radius);
-        font-weight: 800;
-        text-decoration: none;
-      }
+    .nav-links a,
+    .button,
+    .filter-button {
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      font-weight: 800;
+      text-decoration: none;
+    }
 
-      .nav-links a {
-        padding: 9px 10px;
-        color: var(--charcoal);
-        font-size: 0.9rem;
-      }
+    .nav-links a {
+      padding: 9px 10px;
+      color: var(--charcoal);
+      font-size: 0.9rem;
+    }
 
-      .nav-links a:hover {
-        background: rgba(54, 214, 181, 0.12);
-      }
+    .nav-links a:hover {
+      background: rgba(54, 214, 181, 0.12);
+    }
 
-      .hero {
-        display: grid;
-        grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
-        align-items: end;
-        gap: clamp(28px, 6vw, 72px);
-        min-height: calc(100vh - 72px);
-        padding: clamp(56px, 9vw, 118px) 0 56px;
-      }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+      align-items: end;
+      gap: clamp(28px, 6vw, 72px);
+      min-height: calc(100vh - 72px);
+      padding: clamp(56px, 9vw, 118px) 0 56px;
+    }
 
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        margin: 0 0 18px;
-        color: var(--teal-deep);
-        font-size: 0.78rem;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      color: var(--teal-deep);
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
 
-      .eyebrow::before {
-        content: "";
-        width: 34px;
-        height: 2px;
-        background: var(--rust);
-      }
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--rust);
+    }
 
-      h1,
-      h2,
-      h3 {
-        margin: 0;
-        font-family: "Fraunces", Georgia, serif;
-        line-height: 1.05;
-        letter-spacing: 0;
-      }
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
 
-      h1 {
-        max-width: 880px;
-        font-size: clamp(2.15rem, 5vw, 4.25rem);
-      }
+    h1 {
+      max-width: 880px;
+      font-size: clamp(2.15rem, 5vw, 4.25rem);
+    }
 
-      h2 {
-        font-size: clamp(1.65rem, 3vw, 2.75rem);
-      }
+    h2 {
+      font-size: clamp(1.65rem, 3vw, 2.75rem);
+    }
 
-      h3 {
-        font-size: clamp(1.2rem, 2vw, 1.55rem);
-      }
+    h3 {
+      font-size: clamp(1.2rem, 2vw, 1.55rem);
+    }
 
-      .hero-copy {
-        max-width: 710px;
-        margin: 24px 0 0;
-        color: var(--charcoal);
-        font-size: clamp(1rem, 2vw, 1.25rem);
-      }
+    .hero-copy {
+      max-width: 710px;
+      margin: 24px 0 0;
+      color: var(--charcoal);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+    }
 
-      .hero-actions,
-      .card-actions,
-      .contact-actions {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
+    .hero-actions,
+    .card-actions,
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-      .hero-actions {
-        margin-top: 32px;
-      }
+    .hero-actions {
+      margin-top: 32px;
+    }
 
-      .resume-picker {
-        position: relative;
-        display: inline-flex;
-      }
+    .resume-picker {
+      position: relative;
+      display: inline-flex;
+    }
 
-      .resume-picker summary {
-        list-style: none;
-        cursor: pointer;
-      }
+    .resume-picker summary {
+      list-style: none;
+      cursor: pointer;
+    }
 
-      .resume-picker summary::-webkit-details-marker {
-        display: none;
-      }
+    .resume-picker summary::-webkit-details-marker {
+      display: none;
+    }
 
-      .resume-options {
-        position: absolute;
-        top: calc(100% + 10px);
-        left: 0;
-        z-index: 8;
-        display: grid;
-        min-width: 260px;
-        padding: 8px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--surface-strong);
-        box-shadow: var(--shadow);
-      }
+    .resume-options {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      z-index: 8;
+      display: grid;
+      min-width: 260px;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface-strong);
+      box-shadow: var(--shadow);
+    }
 
-      .resume-option {
-        display: grid;
-        gap: 2px;
-        padding: 10px 12px;
-        border-radius: var(--radius);
-        text-decoration: none;
-      }
+    .resume-option {
+      display: grid;
+      gap: 2px;
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      text-decoration: none;
+    }
 
-      .resume-option:hover {
-        background: rgba(54, 214, 181, 0.12);
-      }
+    .resume-option:hover {
+      background: rgba(54, 214, 181, 0.12);
+    }
 
-      .resume-option strong {
-        font-size: 0.9rem;
-      }
+    .resume-option strong {
+      font-size: 0.9rem;
+    }
 
-      .resume-option span {
-        color: var(--muted);
-        font-size: 0.78rem;
-        font-weight: 700;
-      }
+    .resume-option span {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
 
-      .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 46px;
-        padding: 12px 16px;
-        background: linear-gradient(135deg, var(--teal), var(--blue));
-        color: #071719;
-        box-shadow: 0 10px 28px rgba(54, 214, 181, 0.18);
-      }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 16px;
+      background: linear-gradient(135deg, var(--teal), var(--blue));
+      color: #071719;
+      box-shadow: 0 10px 28px rgba(54, 214, 181, 0.18);
+    }
 
-      .button:hover {
-        color: #071719;
-        transform: translateY(-2px);
-      }
+    .button:hover {
+      color: #071719;
+      transform: translateY(-2px);
+    }
 
-      .button.secondary {
-        background: var(--surface-strong);
-        color: var(--ink);
-        border-color: var(--line);
-        box-shadow: none;
-      }
+    .button.secondary {
+      background: var(--surface-strong);
+      color: var(--ink);
+      border-color: var(--line);
+      box-shadow: none;
+    }
 
-      .hero-panel {
-        padding: 24px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: linear-gradient(
-          145deg,
+    .hero-panel {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(145deg,
           rgba(26, 44, 49, 0.88),
-          rgba(18, 31, 35, 0.72)
-        );
-        box-shadow: var(--shadow);
-      }
+          rgba(18, 31, 35, 0.72));
+      box-shadow: var(--shadow);
+    }
 
-      .metric-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
-        margin: 0 0 18px;
-      }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0 0 18px;
+    }
 
-      .metric {
-        min-height: 112px;
-        padding: 16px;
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: rgba(13, 22, 24, 0.52);
-      }
+    .metric {
+      min-height: 112px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(13, 22, 24, 0.52);
+    }
 
-      .metric strong {
-        display: block;
-        color: var(--rust);
-        font-family: "Fraunces", Georgia, serif;
-        font-size: 2rem;
-        line-height: 1;
-      }
+    .metric strong {
+      display: block;
+      color: var(--rust);
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 2rem;
+      line-height: 1;
+    }
 
-      .metric span {
-        display: block;
-        margin-top: 8px;
-        color: var(--muted);
-        font-size: 0.84rem;
-        font-weight: 800;
-      }
+    .metric span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
 
-      .status-line {
-        margin: 0;
-        padding-left: 16px;
-        border-left: 3px solid var(--rust);
-        color: var(--charcoal);
-        font-weight: 700;
-      }
+    .status-line {
+      margin: 0;
+      padding-left: 16px;
+      border-left: 3px solid var(--rust);
+      color: var(--charcoal);
+      font-weight: 700;
+    }
 
-      .section {
-        padding: clamp(54px, 8vw, 94px) 0;
-        border-top: 1px solid var(--line);
-      }
+    .section {
+      padding: clamp(54px, 8vw, 94px) 0;
+      border-top: 1px solid var(--line);
+    }
 
-      .section-head {
-        display: grid;
-        grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
-        gap: clamp(18px, 4vw, 56px);
-        align-items: end;
-        margin-bottom: 30px;
-      }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(18px, 4vw, 56px);
+      align-items: end;
+      margin-bottom: 30px;
+    }
 
-      .section-head p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 1.02rem;
-      }
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
 
-      .about-grid,
-      .contact-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(270px, 0.52fr);
-        gap: 22px;
-      }
+    .about-grid,
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(270px, 0.52fr);
+      gap: 22px;
+    }
 
-      .panel,
-      .project-card,
-      .timeline-item,
-      .link-card {
-        border: 1px solid var(--line);
-        border-radius: var(--radius);
-        background: var(--surface);
-        box-shadow: var(--shadow);
-      }
+    .panel,
+    .project-card,
+    .timeline-item,
+    .link-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
 
-      .panel {
-        padding: clamp(20px, 4vw, 32px);
-      }
+    .panel {
+      padding: clamp(20px, 4vw, 32px);
+    }
 
-      .panel p {
-        margin-top: 0;
-        color: var(--charcoal);
-      }
+    .panel p {
+      margin-top: 0;
+      color: var(--charcoal);
+    }
 
-      .panel p:last-child {
-        margin-bottom: 0;
-      }
+    .panel p:last-child {
+      margin-bottom: 0;
+    }
 
-      .skill-cloud,
-      .tag-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-      }
+    .skill-cloud,
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
 
-      .skill-cloud li,
-      .tag {
-        display: inline-flex;
-        align-items: center;
-        min-height: 30px;
-        padding: 5px 9px;
-        border: 1px solid rgba(54, 214, 181, 0.24);
-        border-radius: var(--radius);
-        background: rgba(54, 214, 181, 0.1);
-        color: var(--teal-deep);
-        font-size: 0.78rem;
-        font-weight: 900;
-        white-space: nowrap;
-      }
+    .skill-cloud li,
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 5px 9px;
+      border: 1px solid rgba(54, 214, 181, 0.24);
+      border-radius: var(--radius);
+      background: rgba(54, 214, 181, 0.1);
+      color: var(--teal-deep);
+      font-size: 0.78rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
 
-      .timeline {
-        display: grid;
-        gap: 14px;
-      }
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
 
-      .timeline-item {
-        display: grid;
-        grid-template-columns: minmax(170px, 0.34fr) minmax(0, 1fr);
-        gap: 18px;
-        padding: 22px;
-      }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: minmax(170px, 0.34fr) minmax(0, 1fr);
+      gap: 18px;
+      padding: 22px;
+    }
 
-      .timeline-meta {
-        color: var(--muted);
-        font-size: 0.92rem;
-        font-weight: 800;
-      }
+    .timeline-meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 800;
+    }
 
-      .timeline-item ul,
-      .project-card ul {
-        margin: 14px 0 0;
-        padding-left: 18px;
-        color: var(--charcoal);
-      }
+    .timeline-item ul,
+    .project-card ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+      color: var(--charcoal);
+    }
 
-      .timeline-item li,
-      .project-card li {
-        margin-bottom: 8px;
-      }
+    .timeline-item li,
+    .project-card li {
+      margin-bottom: 8px;
+    }
 
-      .filters {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-bottom: 24px;
-      }
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
 
-      .filter-button {
-        cursor: pointer;
-        min-height: 40px;
-        padding: 8px 13px;
-        background: var(--surface-strong);
-        color: var(--charcoal);
-        border-color: var(--line);
-        font: inherit;
-        font-size: 0.88rem;
-      }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
 
-      .filter-button:hover,
-      .filter-button.is-active {
-        background: var(--teal-deep);
-        color: #071719;
-        border-color: var(--teal-deep);
-      }
+    .filter-button {
+      cursor: pointer;
+      min-height: 40px;
+      padding: 8px 13px;
+      background: var(--surface-strong);
+      color: var(--charcoal);
+      border-color: var(--line);
+      font: inherit;
+      font-size: 0.88rem;
+    }
 
-      .project-grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 18px;
-      }
+    .filter-button:hover,
+    .filter-button.is-active {
+      background: var(--teal-deep);
+      color: #071719;
+      border-color: var(--teal-deep);
+    }
 
-      .project-card {
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-        padding: 22px;
-        transition:
-          opacity 220ms ease,
-          transform 220ms ease,
-          border-color 220ms ease;
-      }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
 
-      .project-card.is-hidden {
-        display: none;
-      }
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 22px;
+      transition:
+        opacity 220ms ease,
+        transform 220ms ease,
+        border-color 220ms ease;
+    }
 
-      .project-card:hover {
-        transform: translateY(-4px);
-        border-color: rgba(54, 214, 181, 0.5);
-      }
+    .project-card.is-hidden {
+      display: none;
+    }
 
-      .project-top {
-        display: flex;
-        justify-content: space-between;
-        gap: 18px;
-        align-items: flex-start;
-        margin-bottom: 16px;
-      }
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(54, 214, 181, 0.5);
+    }
 
-      .project-type {
-        color: var(--rust);
-        font-size: 0.76rem;
-        font-weight: 900;
-        text-transform: uppercase;
-      }
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
 
-      .project-card p {
-        margin: 0 0 18px;
-        color: var(--charcoal);
-      }
+    .project-type {
+      color: var(--rust);
+      font-size: 0.76rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
 
-      .project-card .tag-row {
-        margin-top: auto;
-      }
+    .project-card p {
+      margin: 0 0 18px;
+      color: var(--charcoal);
+    }
 
-      .project-card .card-actions {
-        margin-top: 18px;
-      }
+    .project-card .tag-row {
+      margin-top: auto;
+    }
 
-      .linux-band {
-        display: grid;
-        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-        gap: 22px;
-        align-items: stretch;
-      }
+    .project-card .card-actions {
+      margin-top: 18px;
+    }
 
-      .terminal {
-        overflow: hidden;
-        border: 1px solid rgba(23, 32, 29, 0.22);
-        border-radius: var(--radius);
-        background: #081f22;
-        color: #edf6ef;
-        box-shadow: var(--shadow);
-      }
+    .linux-band {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 22px;
+      align-items: stretch;
+    }
 
-      .terminal-bar {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        height: 38px;
-        padding: 0 14px;
-        background: #143239;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      }
+    .terminal {
+      overflow: hidden;
+      border: 1px solid rgba(23, 32, 29, 0.22);
+      border-radius: var(--radius);
+      background: #081f22;
+      color: #edf6ef;
+      box-shadow: var(--shadow);
+    }
 
-      .terminal-dot {
-        width: 10px;
-        aspect-ratio: 1;
-        border-radius: 999px;
-        background: #d6a35e;
-      }
+    .terminal-bar {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      height: 38px;
+      padding: 0 14px;
+      background: #143239;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 
-      .terminal-dot:nth-child(2) {
-        background: #8fbf8f;
-      }
+    .terminal-dot {
+      width: 10px;
+      aspect-ratio: 1;
+      border-radius: 999px;
+      background: #d6a35e;
+    }
 
-      .terminal-dot:nth-child(3) {
-        background: #6aa6b8;
-      }
+    .terminal-dot:nth-child(2) {
+      background: #8fbf8f;
+    }
 
-      .terminal pre {
-        margin: 0;
-        padding: 22px;
-        overflow-x: auto;
-        font:
-          600 0.9rem/1.75 "SFMono-Regular",
-          Consolas,
-          "Liberation Mono",
-          monospace;
-      }
+    .terminal-dot:nth-child(3) {
+      background: #6aa6b8;
+    }
 
-      .terminal code {
-        color: inherit;
-      }
+    .terminal pre {
+      margin: 0;
+      padding: 22px;
+      overflow-x: auto;
+      font:
+        600 0.9rem/1.75 "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace;
+    }
 
-      .linux-list {
-        display: grid;
-        gap: 12px;
-      }
+    .terminal code {
+      color: inherit;
+    }
 
-      .link-card {
-        display: block;
-        padding: 18px;
-        text-decoration: none;
-      }
+    .linux-list {
+      display: grid;
+      gap: 12px;
+    }
 
-      .link-card strong {
-        display: block;
-        font-family: "Fraunces", Georgia, serif;
-        font-size: 1.25rem;
-      }
+    .link-card {
+      display: block;
+      padding: 18px;
+      text-decoration: none;
+    }
 
-      .link-card span {
-        display: block;
-        margin-top: 7px;
-        color: var(--muted);
-        font-weight: 600;
-      }
+    .link-card strong {
+      display: block;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.25rem;
+    }
 
-      .writing-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-      }
+    .link-card span {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-weight: 600;
+    }
 
-      .footer {
-        padding: 42px 0 52px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-      }
+    .writing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
 
-      .footer .site-shell {
-        display: flex;
-        justify-content: space-between;
-        gap: 18px;
-        flex-wrap: wrap;
+    .footer {
+      padding: 42px 0 52px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    .footer .site-shell {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition:
+        opacity 650ms ease,
+        transform 650ms ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
       }
 
       .js .reveal {
-        opacity: 0;
-        transform: translateY(22px);
-        transition:
-          opacity 650ms ease,
-          transform 650ms ease;
-      }
-
-      .reveal.is-visible {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
+      }
+    }
+
+    @media (max-width: 900px) {
+
+      .hero,
+      .section-head,
+      .about-grid,
+      .contact-grid,
+      .linux-band {
+        grid-template-columns: 1fr;
       }
 
-      @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          scroll-behavior: auto !important;
-          transition-duration: 0.01ms !important;
-        }
-
-        .js .reveal {
-          opacity: 1;
-          transform: none;
-        }
+      .hero {
+        min-height: auto;
+        padding-top: 42px;
       }
 
-      @media (max-width: 900px) {
-        .hero,
-        .section-head,
-        .about-grid,
-        .contact-grid,
-        .linux-band {
-          grid-template-columns: 1fr;
-        }
+      .project-grid,
+      .writing-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-        .hero {
-          min-height: auto;
-          padding-top: 42px;
-        }
-
-        .project-grid,
-        .writing-grid {
-          grid-template-columns: 1fr;
-        }
+    @media (max-width: 720px) {
+      .site-shell {
+        width: min(100% - 24px, var(--max));
       }
 
-      @media (max-width: 720px) {
-        .site-shell {
-          width: min(100% - 24px, var(--max));
-        }
-
-        .topbar {
-          position: static;
-        }
-
-        .nav {
-          align-items: flex-start;
-          flex-direction: column;
-          padding: 14px 0;
-          gap: 12px;
-        }
-
-        .nav-links {
-          justify-content: flex-start;
-          gap: 4px;
-        }
-
-        .nav-links a {
-          padding: 7px 8px;
-          font-size: 0.84rem;
-        }
-
-        h1 {
-          font-size: clamp(2.1rem, 11vw, 3.4rem);
-        }
-
-        .resume-picker,
-        .resume-picker summary {
-          width: 100%;
-        }
-
-        .resume-options {
-          position: static;
-          margin-top: 10px;
-          width: 100%;
-        }
-
-        .metric-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .timeline-item {
-          grid-template-columns: 1fr;
-        }
-
-        .project-top,
-        .footer .site-shell {
-          flex-direction: column;
-        }
-
-        .button {
-          width: 100%;
-        }
+      .topbar {
+        position: static;
       }
-    </style>
-  </head>
 
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="topbar">
-      <nav class="site-shell nav" aria-label="Primary navigation">
-        <a class="brand" href="./index.html" aria-label="Vinayak Gupta home">
-          <span class="brand-mark">VG</span>
-          <span>Vinayak Gupta</span>
-        </a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#projects">Projects</a>
-          <a href="#linux">Linux</a>
-          <a href="#writing">Writing</a>
-          <a href="#contact">Contact</a>
-          <a href="./plain.html">Plain HTML</a>
-        </div>
-      </nav>
-    </header>
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+        gap: 12px;
+      }
 
-    <main id="main">
-      <section class="site-shell hero">
-        <div class="reveal">
-          <p class="eyebrow">Backend + systems engineer</p>
-          <h1>
-            Engineering healthcare, automation, and tools with a practical edge.
-          </h1>
-          <p class="hero-copy">
-            I am Vinayak Gupta, a developer who works across Go, Node.js,
-            TypeScript, Django, PostgreSQL, Flutter, Tauri, Docker, Linux
-            workflows, and system design. I like building useful products,
-            understanding the underlying machinery, and keeping the interface
-            humane.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#projects">View projects</a>
-            <details class="resume-picker" id="resume-options">
-              <summary class="button secondary">Resume</summary>
-              <div class="resume-options">
-                <a
-                  class="resume-option"
-                  href="./vinayak_gupta_resume_AI_centric.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <strong>AI / Vibe Engineering</strong>
-                  <span
-                    >Systems, AI workflow, research, and expanded CV
-                    context</span
-                  >
-                </a>
-                <a
-                  class="resume-option"
-                  href="./vinayak_gupta_resume_backend_dev.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <strong>Backend / Full Stack</strong>
-                  <span>Traditional software engineering resume</span>
-                </a>
-              </div>
-            </details>
-            <a class="button secondary" href="mailto:vinayakg236@gmail.com"
-              >Email me</a
-            >
-          </div>
-        </div>
+      .nav-links {
+        justify-content: flex-start;
+        gap: 4px;
+      }
 
-        <aside class="hero-panel reveal" aria-label="Portfolio highlights">
-          <div class="metric-grid">
-            <div class="metric">
-              <strong>8ms</strong>
-              <span>low-latency PLC signaling target in automation loops</span>
-            </div>
-            <div class="metric">
-              <strong>40k+</strong>
-              <span
-                >authenticated patients supported through health data
-                systems</span
-              >
-            </div>
-            <div class="metric">
-              <strong>30 FPS</strong>
-              <span>vision-tracking data streams for ROI transforms</span>
-            </div>
-            <div class="metric">
-              <strong>Arch</strong>
-              <span>Linux user, writer, and systems tinkerer</span>
-            </div>
-          </div>
-          <p class="status-line">
-            Currently working across Linux-native desktop apps, backend systems,
-            secure local tooling, and multilingual communication.
-          </p>
-        </aside>
-      </section>
+      .nav-links a {
+        padding: 7px 8px;
+        font-size: 0.84rem;
+      }
 
-      <section class="section" id="about">
-        <div class="site-shell">
-          <div class="section-head reveal">
-            <div>
-              <p class="eyebrow">About</p>
-              <h2>Builder with a systems mind.</h2>
-            </div>
-            <p>
-              My path runs through physics, healthcare products, full stack
-              engineering, Flutter apps, Linux, and writing. I enjoy work where
-              design decisions meet real constraints: users, hardware,
-              infrastructure, security, latency, and maintainability.
-            </p>
-          </div>
+      h1 {
+        font-size: clamp(2.1rem, 11vw, 3.4rem);
+      }
 
-          <div class="about-grid">
-            <article class="panel reveal">
-              <p>
-                I have led technical planning, product delivery, integrations,
-                deployments, and hands-on development in Health-IT and
-                industrial automation environments. Outside work, I build small
-                systems to learn deeply: games in C++, encrypted finance apps,
-                HRMS backends, KMS experiments, custom parsers, toy compilers,
-                and Linux workflow tooling.
-              </p>
-              <p>
-                I care about clear architecture, honest interfaces, and shipping
-                software that can survive outside a demo.
-              </p>
-            </article>
+      .resume-picker,
+      .resume-picker summary {
+        width: 100%;
+      }
 
-            <aside class="panel reveal">
-              <h3>Core stack</h3>
-              <ul class="skill-cloud" aria-label="Core skills">
-                <li>Flutter</li>
-                <li>Node.js</li>
-                <li>TypeScript</li>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-                <li>React</li>
-                <li>Go</li>
-                <li>C++</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Echo</li>
-                <li>Tauri</li>
-                <li>Docker</li>
-                <li>Rust</li>
-                <li>OCaml</li>
-                <li>AWS</li>
-                <li>CI/CD</li>
-                <li>Linux</li>
-                <li>Encryption</li>
-                <li>EBNF Parsing</li>
-                <li>System Design</li>
-                <li>Modbus TCP</li>
-                <li>QML Themes</li>
-                <li>Nvim</li>
-                <li>Japanese N3</li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </section>
+      .resume-options {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+      }
 
-      <section class="section" id="work">
-        <div class="site-shell">
-          <div class="section-head reveal">
-            <div>
-              <p class="eyebrow">Work</p>
-              <h2>Experience that moved from code to ownership.</h2>
-            </div>
-            <p>
-              The thread across these roles is delivery: building products,
-              explaining tradeoffs, coordinating teams, and keeping systems
-              understandable enough to operate.
-            </p>
-          </div>
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
 
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <strong>Software Development Intern</strong><br />
-                Techasoft Pvt. Ltd.<br />
-                Mar 2026 - Present
-              </div>
-              <div>
-                <h3>Industrial automation systems and Linux-native clients</h3>
-                <ul>
-                  <li>
-                    Architected and validated real-time edge computer vision
-                    pipelines for industrial FMCG production, deploying CNN YOLO
-                    models onto NVIDIA Jetson Nano to process dual camera feeds
-                    at 30 FPS.
-                  </li>
-                  <li>
-                    Worked on biscuit counting and rejection systems using
-                    camera triggers, YOLO inference, PLC pulses, and calibrated
-                    belt geometry.
-                  </li>
-                  <li>
-                    Engineered hardware-software control loops via Python
-                    (Modbus TCP), translating CV inference into low-latency 24V
-                    PLC signals within an 8ms window for automated pneumatic
-                    packaging rejection.
-                  </li>
-                  <li>
-                    Designed a pixel-to-millimeter ROI calibration system in
-                    Django, dynamically calculating geometric coordinate
-                    matrices based on factory pixel scales (px/mm) to eliminate
-                    manual labor.
-                  </li>
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
 
-                  <li>
-                    Optimized high-concurrency data layers by migrating
-                    production systems from SQLite to PostgreSQL, enhancing
-                    indexing strategies for on-site real-time data logging and
-                    parameter thresholding.
-                  </li>
-                  <li>
-                    Architected Django REST services with a multithreaded Tauri
-                    frontend compiled as a Linux .deb client.
-                  </li>
-                  <li>
-                    Moved production data from SQLite to PostgreSQL while
-                    stabilizing concurrent writes and query behavior.
-                  </li>
-                </ul>
-              </div>
-            </article>
+      .project-top,
+      .footer .site-shell {
+        flex-direction: column;
+      }
 
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <strong>Tech Lead</strong><br />
-                Meodoc Health IT<br />
-                Feb 2025 - Jul 2025
-              </div>
-              <div>
-                <h3>Healthcare ecosystem architecture and delivery</h3>
-                <ul>
-                  <li>
-                    Integrated ABHA v4 health data APIs and secure translation
-                    middleware for 40,000+ authenticated patients.
-                  </li>
-                  <li>
-                    Designed technical models, architecture, service
-                    interactions, and local Go KMS concepts across products.
-                  </li>
-                  <li>
-                    Led SDLC planning, CI/CD, deployments, AWS, Flutter,
-                    Node.js, and SQL work across product teams.
-                  </li>
-                </ul>
-              </div>
-            </article>
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
 
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <strong>Product Lead</strong><br />
-                Medoc Health Pvt. Ltd.<br />
-                Feb 2023 - Jan 2024
-              </div>
-              <div>
-                <h3>Product direction for Health-IT tools</h3>
-                <ul>
-                  <li>
-                    Built and managed MedocEUA, a patient app for appointments,
-                    lab tests, prescriptions, family access, QR flows, and
-                    consent management.
-                  </li>
-                  <li>
-                    Designed appointment triage with grouped priority slots so
-                    emergency, trauma, app-booked, and general appointments
-                    could coexist.
-                  </li>
-                  <li>
-                    Translated user needs into product and system decisions for
-                    smoother healthcare experiences.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <strong>Freelance Developer</strong><br />
-                Appable Technologies Pvt. Ltd.<br />
-                Jul 2023 - Jun 2024
-              </div>
-              <div>
-                <h3>Cross-platform apps and backend ownership</h3>
-                <ul>
-                  <li>
-                    Built sports booking apps with Flutter, Node.js, MongoDB,
-                    Google Maps pins, team invites, chat, SMS fallbacks, and
-                    event workflows.
-                  </li>
-                  <li>
-                    Built an HRMS platform with Flutter, EJS admin UI, Node.js,
-                    PostgreSQL, geofenced attendance, leave approval, cron jobs,
-                    and PDF salary slips.
-                  </li>
-                  <li>
-                    Owned frontend, backend, schema design, and full-stack
-                    delivery after replacing costly Firebase-style assumptions
-                    with custom APIs.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline-item reveal">
-              <div class="timeline-meta">
-                <strong>Software Developer Intern</strong><br />
-                Medoc Health IT Pvt. Ltd.<br />
-                Aug 2022 - Jan 2023
-              </div>
-              <div>
-                <h3>Software development fundamentals</h3>
-                <ul>
-                  <li>
-                    Worked with a development team to learn the software
-                    development cycle.
-                  </li>
-                  <li>
-                    Built an understanding of cross-platform development and
-                    Flutter interface design.
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="site-shell">
-          <div class="section-head reveal">
-            <div>
-              <p class="eyebrow">Projects</p>
-              <h2>Tagged by domain and stack.</h2>
-            </div>
-            <p>
-              Personal and open-ended work only. Company-owned product work is
-              covered in the professional experience section where it belongs.
-            </p>
-          </div>
-
-          <div class="filters reveal" aria-label="Project filters">
-            <button
-              class="filter-button is-active"
-              type="button"
-              data-filter="all"
-            >
-              All
-            </button>
-            <button
-              class="filter-button"
-              type="button"
-              data-filter="full-stack"
-            >
-              Full stack
-            </button>
-            <button class="filter-button" type="button" data-filter="mobile">
-              Mobile
-            </button>
-            <button class="filter-button" type="button" data-filter="systems">
-              Systems
-            </button>
-            <button class="filter-button" type="button" data-filter="ai">
-              AI
-            </button>
-            <button class="filter-button" type="button" data-filter="linux">
-              Linux
-            </button>
-            <button class="filter-button" type="button" data-filter="theme">
-              Themes
-            </button>
-            <button class="filter-button" type="button" data-filter="qml">
-              QML
-            </button>
-            <button class="filter-button" type="button" data-filter="flutter">
-              Flutter
-            </button>
-            <button class="filter-button" type="button" data-filter="node">
-              Node.js
-            </button>
-            <button class="filter-button" type="button" data-filter="go">
-              Go
-            </button>
-            <button class="filter-button" type="button" data-filter="python">
-              Python
-            </button>
-            <button class="filter-button" type="button" data-filter="cpp">
-              C++
-            </button>
-            <button class="filter-button" type="button" data-filter="compiler">
-              Compiler
-            </button>
-          </div>
-
-          <div class="project-grid">
-            <article
-              class="project-card reveal"
-              data-tags="mobile flutter encryption product"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Mobile + encryption</span>
-                  <h3>Personal Bahi Khata</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/persona_bahi_khata"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A personal expense tracker with PBKE file exports, AES-GCM
-                encryption, compressed JSON payloads, SMS-assisted expense
-                capture, tag/month filters, date-range sharing, and CSV/JSON
-                fallbacks for interoperability.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Flutter</li>
-                <li class="tag">Encryption</li>
-                <li class="tag">AES-GCM</li>
-                <li class="tag">PBKE</li>
-                <li class="tag">Mobile</li>
-              </ul>
-              <div class="card-actions">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.vins.bahi_khata"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><i class="fa-brands fa-google-play"></i> Play Store</a
-                >
-              </div>
-            </article>
-
-            <article
-              class="project-card reveal"
-              data-tags="systems go encryption kms linux"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Systems + security</span>
-                  <h3>Zundarth</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/Zundarth"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A KMS experiment using HMAC-256 derived user keys and 256-bit
-                symmetric keys, designed around local volume-backed storage and
-                future package usage.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Go</li>
-                <li class="tag">KMS</li>
-                <li class="tag">Encryption</li>
-                <li class="tag">Linux</li>
-              </ul>
-            </article>
-
-            <article class="project-card reveal" data-tags="linux theme qml">
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Linux display manager</span>
-                  <h3>SDDM Theme</h3>
-                </div>
-              </div>
-              <p>
-                A custom login-screen theme for SDDM, built around Qt/QML
-                styling so the desktop environment feels cohesive from boot to
-                session.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Linux</li>
-                <li class="tag">SDDM</li>
-                <li class="tag">QML</li>
-                <li class="tag">Theme</li>
-              </ul>
-            </article>
-
-            <article
-              class="project-card reveal"
-              data-tags="systems go parser data"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Compiler + data format</span>
-                  <h3>GOD (Grounded Object Data Format)</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/GOD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A custom schema-less serialization format and compiler suite in
-                Go using EBNF grammar design, a hand-written scanner,
-                recursive-descent parsing, and reflection-based unmarshalling.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Go</li>
-                <li class="tag">EBNF</li>
-                <li class="tag">Parser</li>
-                <li class="tag">Serialization</li>
-              </ul>
-            </article>
-
-            <article
-              class="project-card reveal"
-              data-tags="ai compiler rust ocaml systems"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">AI-assisted compiler work</span>
-                  <h3>VIKS Language Compiler</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/GOD"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A language design and compiler experiment using OCaml, Rust,
-                LLVM ideas, and AI-assisted development, exploring tagged
-                unions, typeclasses, scoped modules, pure functions, mutability
-                rules, tree-shaking, and precise numeric plans.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">OCaml</li>
-                <li class="tag">Rust</li>
-                <li class="tag">LLVM</li>
-                <li class="tag">AI Workflow</li>
-              </ul>
-            </article>
-
-            <article class="project-card reveal" data-tags="linux theme">
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Boot experience</span>
-                  <h3>GRUB Theme</h3>
-                </div>
-              </div>
-              <p>
-                A custom GRUB theme for the bootloader layer, keeping the Arch
-                setup visually consistent before the display manager starts.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Linux</li>
-                <li class="tag">GRUB</li>
-                <li class="tag">Theme</li>
-              </ul>
-            </article>
-
-            <article class="project-card reveal" data-tags="linux qml shell">
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Desktop workflow</span>
-                  <h3>Noctalia Shell Plugin</h3>
-                </div>
-              </div>
-              <p>
-                A shell plugin for Noctalia focused on faster multilingual input
-                switching from the status bar instead of manually opening the
-                Fcitx app.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Linux</li>
-                <li class="tag">Noctalia</li>
-                <li class="tag">QML</li>
-                <li class="tag">Workflow</li>
-              </ul>
-            </article>
-
-            <article
-              class="project-card reveal"
-              data-tags="linux theme qml shell"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Shell design system</span>
-                  <h3>Noctalia Shell Color Schema</h3>
-                </div>
-              </div>
-              <p>
-                A custom color schema for Noctalia Shell that keeps the desktop
-                palette readable, consistent, and tuned for day-to-day Arch
-                usage.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Linux</li>
-                <li class="tag">Noctalia</li>
-                <li class="tag">QML</li>
-                <li class="tag">Theme</li>
-              </ul>
-            </article>
-
-            <article
-              class="project-card reveal"
-              data-tags="systems go full-stack linux parser security"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Stateless web systems</span>
-                  <h3>Vichar.Abhivyakti</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/vichar.abhivyakti"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A server-rendered Go textboard concept with stateless
-                architecture, tripcode identity, Markdown sanitization, and
-                outbound redirect warnings for safer anonymous posting.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Go</li>
-                <li class="tag">SSR</li>
-                <li class="tag">Security</li>
-                <li class="tag">Parsing</li>
-              </ul>
-              <a
-                href="https://vichar.abhivyakti.space/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                🔗 Try It
-              </a>
-            </article>
-
-            <article
-              class="project-card reveal"
-              data-tags="systems cpp game sfml linux"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Game systems</span>
-                  <h3>SFML Smasher</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/smashers_sfml"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A C++/SFML game project built to understand pointers, memory
-                management, and resource constraints with an eye toward small
-                arcade-style systems.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">C++</li>
-                <li class="tag">SFML</li>
-                <li class="tag">Game Dev</li>
-                <li class="tag">Linux</li>
-              </ul>
-            </article>
-
-            <article
-              class="project-card reveal"
-              data-tags="python data science research"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Data + research</span>
-                  <h3>Directory of Integer Sequences</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/A-directory-of-integer-sequences"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A Python tool for exploring integer sequences with curated
-                explanations, manipulation utilities, and visualization ideas
-                for students and researchers.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Python</li>
-                <li class="tag">Data Science</li>
-                <li class="tag">Math</li>
-              </ul>
-            </article>
-            <article
-              class="project-card reveal"
-              data-tags="full-stack node postgres accounting backend"
-            >
-              <div class="project-top">
-                <div>
-                  <span class="project-type">Full stack backend</span>
-                  <h3>Accounting & Inventory System</h3>
-                </div>
-                <a
-                  href="https://github.com/vinayakgupta29/accounting-node.TS"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </div>
-              <p>
-                A business-focused accounting and inventory system with Node.js,
-                TypeScript, PostgreSQL, reporting, purchase-order flows, and
-                stock control.
-              </p>
-              <ul class="tag-row">
-                <li class="tag">Node.js</li>
-                <li class="tag">TypeScript</li>
-                <li class="tag">PostgreSQL</li>
-                <li class="tag">Accounting</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="linux">
-        <div class="site-shell">
-          <div class="section-head reveal">
-            <div>
-              <p class="eyebrow">Linux</p>
-              <h2>Daily-driver systems work.</h2>
-            </div>
-            <p>
-              A separate home for Linux-facing projects, setup notes, and system
-              experiments. I kept this section ready to grow as you add
-              dotfiles, scripts, packages, or homelab work.
-            </p>
-          </div>
-
-          <div class="linux-band">
-            <div class="terminal reveal" aria-label="Linux project summary">
-              <div class="terminal-bar" aria-hidden="true">
-                <span class="terminal-dot"></span>
-                <span class="terminal-dot"></span>
-                <span class="terminal-dot"></span>
-              </div>
-              <pre><code>$ whoami
-vinayak
-
-$ focus --linux
-arch workstation notes
-tauri .deb clients
-go encryption tooling
-c++/sfml experiments
-fcitx input switching
-qml boot/login themes
-clean deployment habits
-
-$ next
-dotfiles, nvim linting, grub, sddm, plymouth</code></pre>
-            </div>
-
-            <div class="linux-list">
-              <a
-                class="link-card reveal"
-                href="https://vinayakgupta29.github.io/blogs/tech/linux/arch/2025/06/15/arch-experience.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>Why I Use Arch</strong>
-                <span
-                  >Linux writing about your operating system choices and
-                  daily-driver thinking.</span
-                >
-              </a>
-              <a
-                class="link-card reveal"
-                href="https://github.com/vinayakgupta29/Zundarth"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>Zundarth</strong>
-                <span
-                  >Go-based local key-management experiment that fits naturally
-                  into Linux system workflows.</span
-                >
-              </a>
-              <a class="link-card reveal" href="#projects">
-                <strong>Tauri Linux Client Work</strong>
-                <span
-                  >Native desktop application compilation for POSIX/Linux
-                  industrial environments.</span
-                >
-              </a>
-              <a class="link-card reveal" href="#projects">
-                <strong>Arch Desktop DIY</strong>
-                <span
-                  >Dotfiles, GRUB themes, SDDM themes, Plymouth themes, and QML
-                  shell plugin work.</span
-                >
-              </a>
-              <a class="link-card reveal" href="#projects">
-                <strong>Multilingual Workflow Tools</strong>
-                <span
-                  >Status-bar input switching for US, ITRANS Hindi, Japanese,
-                  and Sanskrit work without opening Fcitx.</span
-                >
-              </a>
-              <a class="link-card reveal" href="#projects">
-                <strong>Nvim Format Linting</strong>
-                <span
-                  >A small Neovim plugin idea for linting a custom
-                  personal-record text data format.</span
-                >
-              </a>
-              <a
-                class="link-card reveal"
-                href="https://github.com/vinayakgupta29/smashers_sfml"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>SFML Smasher</strong>
-                <span
-                  >C++/SFML game systems practice with low-level memory and
-                  runtime constraints.</span
-                >
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="writing">
-        <div class="site-shell">
-          <div class="section-head reveal">
-            <div>
-              <p class="eyebrow">Writing</p>
-              <h2>Technical notes and Abhivyakti.</h2>
-            </div>
-            <p>
-              The portfolio also points to your blog and literature so visitors
-              can see the thinking behind the code.
-            </p>
-          </div>
-
-          <div class="writing-grid">
-            <a
-              class="link-card reveal"
-              href="https://vinayakgupta29.github.io/blogs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>Abhivyakti</strong>
-              <span
-                >Blog home for technical, philosophical, and personal
-                writing.</span
-              >
-            </a>
-            <a
-              class="link-card reveal"
-              href="https://vinayakgupta29.github.io/blogs/tech/encryption/flutter/2024/02/03/personal-bahi-khata.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>Personal Bahi Khata</strong>
-              <span>Notes around encryption and Flutter product work.</span>
-            </a>
-            <a
-              class="link-card reveal"
-              href="https://vinayakgupta29.github.io/blogs/philosophy/poetry/expression/2025/06/22/incredible-india.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <strong>Incredible India</strong>
-              <span>Personal literature from Abhivyakti.</span>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="site-shell contact-grid">
-          <div class="reveal">
-            <p class="eyebrow">Contact</p>
-            <h2>Let's build something that has a spine.</h2>
-          </div>
-          <div class="panel reveal">
-            <p>
-              Open to development, systems design, product engineering, and
-              technical collaboration across practical software problems.
-            </p>
-            <div class="contact-actions">
-              <a class="button" href="mailto:vinayakg236@gmail.com"
-                >vinayakg236@gmail.com</a
-              >
-              <a
-                class="button secondary"
-                href="https://github.com/vinayakgupta29"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-              <a
-                class="button secondary"
-                href="https://www.linkedin.com/in/vinayak-gupta-70a808202/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-              <a
-                class="button secondary"
-                href="./vinayak_gupta_cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                >CV</a
-              >
-              <a
-                class="button secondary"
-                href="./VINAYAK%20GUPTA.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Certificate</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="site-shell">
-        <span>&copy; 2026 Vinayak Gupta. All rights reserved.</span>
-        <span
-          ><a href="./plain.html">Plain HTML version</a> &middot;
-          <a href="#resume-options">Resume options</a></span
-        >
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <nav class="site-shell nav" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="Vinayak Gupta home">
+        <span class="brand-mark">VG</span>
+        <span>Vinayak Gupta</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#linux">Linux</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+        <a href="./plain.html">Plain HTML</a>
       </div>
-    </footer>
+    </nav>
+  </header>
 
-    <script>
-      const revealObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              revealObserver.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.14 },
-      );
+  <main id="main">
+    <section class="site-shell hero">
+      <div class="reveal">
+        <p class="eyebrow">Backend + systems engineer</p>
+        <h1>
+          Engineering healthcare, automation, and tools with a practical edge.
+        </h1>
+        <p class="hero-copy">
+          I am Vinayak Gupta, a developer who works across Go, Node.js,
+          TypeScript, Django, PostgreSQL, Flutter, C++, SFML, Docker, Linux
+          workflows, and system design. I like building useful products,
+          understanding the underlying machinery, and keeping the interface
+          humane.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">View projects</a>
+          <details class="resume-picker" id="resume-options">
+            <summary class="button secondary">Resume</summary>
+            <div class="resume-options">
+              <a class="resume-option" href="./vinayak_gupta_resume_AI_centric.pdf" target="_blank"
+                rel="noopener noreferrer">
+                <strong>AI / Vibe Engineering</strong>
+                <span>Systems, AI workflow, research, and expanded CV
+                  context</span>
+              </a>
+              <a class="resume-option" href="./vinayak_gupta_resume_backend_dev.pdf" target="_blank"
+                rel="noopener noreferrer">
+                <strong>Backend / Full Stack</strong>
+                <span>Traditional software engineering resume</span>
+              </a>
+            </div>
+          </details>
+          <a class="button secondary" href="mailto:vinayakg236@gmail.com">Email me</a>
+        </div>
+      </div>
 
-      document.querySelectorAll(".reveal").forEach((element, index) => {
-        element.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
-        revealObserver.observe(element);
-      });
+      <aside class="hero-panel reveal is-visible" aria-label="Portfolio highlights" style="transition-delay: 70ms;">
+        <div class="metric-grid">
+          <div class="metric">
+            <strong>8ms</strong>
+            <span>low-latency PLC signaling target in automation loops</span>
+          </div>
 
-      const filterButtons = document.querySelectorAll("[data-filter]");
-      const projectCards = document.querySelectorAll(".project-card");
+          <div class="metric">
+            <strong>40k+</strong>
+            <span>authenticated patients supported through health data systems</span>
+          </div>
 
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const filter = button.dataset.filter;
+          <div class="metric">
+            <strong>30 FPS</strong>
+            <span>vision-tracking data streams for ROI transforms</span>
+          </div>
 
-          filterButtons.forEach((item) => item.classList.remove("is-active"));
-          button.classList.add("is-active");
+          <div class="metric">
+            <strong>Arch</strong>
+            <span>Linux user, writer, and systems tinker</span>
+          </div>
 
-          projectCards.forEach((card) => {
-            const tags = card.dataset.tags.split(" ");
-            const shouldShow = filter === "all" || tags.includes(filter);
-            card.classList.toggle("is-hidden", !shouldShow);
-          });
+          <!-- New block -->
+          <div class="metric">
+            <strong>2 ms</strong>
+            <span>Extremely low-latency Https KMS APIs </span>
+          </div>
+
+          <!-- New block -->
+          <div class="metric">
+            <strong> Secure </strong>
+            <span>Security First deployment and development</span>
+          </div>
+        </div>
+
+        <p class="status-line">
+          Currently working across Linux-native desktop apps, backend systems,
+          secure local tooling, and multilingual communication.
+        </p>
+      </aside>
+    </section>
+
+    <section class="section" id="about">
+      <div class="site-shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Builder with a systems mind.</h2>
+          </div>
+          <p>
+            My path runs through Mathematics, healthcare products, full stack
+            engineering, Flutter apps, Linux, and writing. I enjoy work where
+            design decisions meet real constraints: users, hardware,
+            infrastructure, security, latency, and maintainability.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="panel reveal">
+            <p>
+              I have led technical planning, product delivery, integrations,
+              deployments, and hands-on development in Health-IT and
+              industrial automation environments. Outside work, I build small
+              systems to learn deeply: games in C++, encrypted finance apps,
+              HRMS backends, KMS experiments, custom parsers, toy compilers,
+              and Linux workflow tooling.
+            </p>
+            <p>
+              I care about clear architecture, honest interfaces, and shipping
+              software that can survive outside a demo.
+            </p>
+          </article>
+
+          <aside class="panel reveal">
+            <h3>Core stack</h3>
+            <ul class="skill-cloud" aria-label="Core skills">
+              <li>Flutter</li>
+              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>React</li>
+              <li>Go</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Echo</li>
+              <li>Tauri</li>
+              <li>Docker</li>
+              <li>Rust</li>
+              <li>OCaml</li>
+              <li>AWS</li>
+              <li>Azure</li>
+              <li>CI/CD</li>
+              <li>Linux</li>
+              <li>Encryption</li>
+              <li>EBNF Parsing</li>
+              <li>System Design</li>
+              <li>Modbus TCP</li>
+              <li>QML Themes</li>
+              <li>Nvim</li>
+              <!-- <li>Japanese N3</li> -->
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="site-shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Work</p>
+            <h2>Experience that moved from code to ownership.</h2>
+          </div>
+          <p>
+            The thread across these roles is delivery: building products,
+            explaining tradeoffs, coordinating teams, and keeping systems
+            understandable enough to operate.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <strong>Software Development Intern</strong><br />
+              Techasoft Pvt. Ltd.<br />
+              Mar 2026 - Present
+            </div>
+            <div>
+              <h3>Industrial automation systems and Linux-native clients</h3>
+              <ul>
+                <li>
+                  Architected and validated real-time edge computer vision
+                  pipelines for industrial FMCG production, deploying CNN YOLO
+                  models onto NVIDIA Jetson Nano to process dual camera feeds
+                  at 30 FPS.
+                </li>
+                <li>
+                  Worked on biscuit counting and rejection systems using
+                  camera triggers, YOLO inference, PLC pulses, and calibrated
+                  belt geometry.
+                </li>
+                <li>
+                  Engineered hardware-software control loops via Python
+                  (Modbus TCP), translating CV inference into low-latency 24V
+                  PLC signals within an 8ms window for automated pneumatic
+                  packaging rejection.
+                </li>
+                <li>
+                  Designed a pixel-to-millimeter ROI calibration system in
+                  Django, dynamically calculating geometric coordinate
+                  matrices based on factory pixel scales (px/mm) to eliminate
+                  manual labor.
+                </li>
+
+                <li>
+                  Optimized high-concurrency data layers by migrating
+                  production systems from SQLite to PostgreSQL, enhancing
+                  indexing strategies for on-site real-time data logging and
+                  parameter thresholding.
+                </li>
+                <li>
+                  Architected Django REST services with a multithreaded Tauri
+                  frontend compiled as a Linux .deb client.
+                </li>
+                <li>
+                  Moved production data from SQLite to PostgreSQL while
+                  stabilizing concurrent writes and query behavior.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <strong>Tech Lead</strong><br />
+              Meodoc Health IT<br />
+              Feb 2025 - Jul 2025
+            </div>
+            <div>
+              <h3>Healthcare ecosystem architecture and delivery</h3>
+              <ul>
+                <li>
+                  Designed and engineered a stateful local Key Management System (KMS) in Go, implementing PBKDF2-based
+                  key derivation, secure key isolation, and sub-2ms retrieval performance.
+                </li>
+                <li>
+                  Led security-first architecture and compliance initiatives for healthcare platforms, implementing
+                  encrypted data handling and secure access controls.
+                </li>
+                <li>
+                  Integrated legacy ABHA health data APIs and built secure translation middleware, enabling reliable
+                  processing for 40,000+ authenticated patients.
+                </li>
+                <li>
+                  Designed core backend architectures, service interactions, and cryptographic infrastructure across
+                  Go-based healthcare products.
+                </li>
+                <li>
+                  Built a deterministic clinician triage and scheduling engine, resolving high-density resource
+                  allocation challenges with constant-time availability computation.
+                </li>
+                <li>
+                  Developed native Flutter modules integrating Android Health Connect and privacy-focused consent
+                  systems for secure cross-device health data synchronization.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <strong>Product Lead</strong><br />
+              Medoc Health Pvt. Ltd.<br />
+              Feb 2023 - Jan 2024
+            </div>
+            <div>
+              <h3>Product direction for Health-IT tools</h3>
+              <ul>
+                <li>
+                  Built and maintained a patient-facing healthcare application enabling appointment booking, diagnostic
+                  test scheduling, digital prescriptions, family member management, QR-based check-ins, and patient
+                  consent workflows.
+                </li>
+
+                <li>
+                  Developed integrations with Android Health Connect to collect and visualize user health metrics,
+                  enabling secure tracking of wellness and medical data across devices.
+                </li>
+
+                <li>
+                  Designed and implemented a time-bound consent management system that allowed patients to grant,
+                  monitor, and revoke access to their personal health records and medical data in compliance with
+                  healthcare privacy requirements.
+                </li>
+
+                <li>
+                  Engineered an appointment triage and scheduling system that prioritized emergency, trauma, scheduled,
+                  and walk-in consultations while maximizing clinician availability and resource utilization.
+                </li>
+
+                <li>
+                  Collaborated closely with healthcare providers, operations teams, and end users to translate clinical
+                  workflows and patient requirements into scalable product features and system architecture.
+                </li>
+
+                <li>
+                  Built secure health-data access workflows integrating government healthcare services, ensuring
+                  reliable authentication, authorization, and patient-controlled data sharing.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <strong>Freelance Developer</strong><br />
+              Appable Technologies Pvt. Ltd.<br />
+              Jul 2023 - Jun 2024
+            </div>
+            <div>
+              <h3>Cross-platform apps and backend ownership</h3>
+              <ul>
+                <li>
+                  Built sports booking apps with Flutter, Node.js, MongoDB,
+                  Google Maps pins, team invites, chat, SMS fallbacks, and
+                  event workflows.
+                </li>
+                <li>
+                  Built an HRMS platform with Flutter, EJS admin UI, Node.js,
+                  PostgreSQL, geofenced attendance, leave approval, cron jobs,
+                  and PDF salary slips.
+                </li>
+                <li>
+                  Owned frontend, backend, schema design, and full-stack
+                  delivery after replacing costly Firebase-style assumptions
+                  with custom APIs.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <strong>Software Developer Intern</strong><br />
+              Medoc Health IT Pvt. Ltd.<br />
+              Aug 2022 - Jan 2023
+            </div>
+            <div>
+              <h3>Software development fundamentals</h3>
+              <ul>
+                <li>
+                  Worked with a development team to learn the software
+                  development cycle.
+                </li>
+                <li>
+                  Built an understanding of cross-platform development and
+                  Flutter interface design.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="site-shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>Tagged by domain and stack.</h2>
+          </div>
+          <p>
+            Personal and open-ended work only. Company-owned product work is
+            covered in the professional experience section where it belongs.
+          </p>
+        </div>
+
+        <div class="filters reveal" aria-label="Project filters">
+          <button class="filter-button is-active" type="button" data-filter="all">
+            All
+          </button>
+          <button class="filter-button" type="button" data-filter="full-stack">
+            Full stack
+          </button>
+          <button class="filter-button" type="button" data-filter="mobile">
+            Mobile
+          </button>
+          <button class="filter-button" type="button" data-filter="systems">
+            Systems
+          </button>
+          <button class="filter-button" type="button" data-filter="ai">
+            AI
+          </button>
+          <button class="filter-button" type="button" data-filter="linux">
+            Linux
+          </button>
+          <button class="filter-button" type="button" data-filter="theme">
+            Themes
+          </button>
+          <button class="filter-button" type="button" data-filter="qml">
+            QML
+          </button>
+          <button class="filter-button" type="button" data-filter="flutter">
+            Flutter
+          </button>
+          <button class="filter-button" type="button" data-filter="node">
+            Node.js
+          </button>
+          <button class="filter-button" type="button" data-filter="go">
+            Go
+          </button>
+          <button class="filter-button" type="button" data-filter="python">
+            Python
+          </button>
+          <button class="filter-button" type="button" data-filter="cpp">
+            C++
+          </button>
+          <button class="filter-button" type="button" data-filter="compiler">
+            Compiler
+          </button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-tags="mobile flutter encryption product">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Mobile + encryption</span>
+                <h3>Personal Bahi Khata</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/persona_bahi_khata" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A personal expense tracker with PBKE file exports, AES-GCM
+              encryption, compressed JSON payloads, SMS-assisted expense
+              capture, tag/month filters, date-range sharing, and CSV/JSON
+              fallbacks for interoperability.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Flutter</li>
+              <li class="tag">Encryption</li>
+              <li class="tag">AES-GCM</li>
+              <li class="tag">PBKE</li>
+              <li class="tag">Mobile</li>
+            </ul>
+            <div class="card-actions">
+              <a href="https://play.google.com/store/apps/details?id=com.vins.bahi_khata" target="_blank"
+                rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-google-play"></i> Play Store</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="systems go encryption kms linux">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Systems + security</span>
+                <h3>Zundarth</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/Zundarth" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A KMS experiment using HMAC-256 derived user keys and 256-bit
+              symmetric keys, designed around local volume-backed storage and
+              future package usage.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Go</li>
+              <li class="tag">KMS</li>
+              <li class="tag">Encryption</li>
+              <li class="tag">Linux</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="linux theme qml">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Linux display manager</span>
+                <h3>SDDM Theme</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/sddm-slayer" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+
+            </div>
+            <p>
+              A custom login-screen theme for SDDM, built around Qt/QML
+              styling so the desktop environment feels cohesive from boot to
+              session.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Linux</li>
+              <li class="tag">SDDM</li>
+              <li class="tag">QML</li>
+              <li class="tag">Theme</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="systems go parser data">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Compiler + data format</span>
+                <h3>GOD (Grounded Object Data Format)</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/GOD" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A custom schema-less serialization format and compiler suite in
+              Go using EBNF grammar design, a hand-written scanner,
+              recursive-descent parsing, and reflection-based unmarshalling.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Go</li>
+              <li class="tag">EBNF</li>
+              <li class="tag">Parser</li>
+              <li class="tag">Serialization</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="ai compiler rust ocaml systems">
+            <div class="project-top">
+              <div>
+                <span class="project-type">AI-assisted compiler work</span>
+                <h3>VIKS Language Compiler</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/llvm-compiler" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A language design and compiler experiment using OCaml, Rust,
+              LLVM ideas, and AI-assisted development, exploring tagged
+              unions, typeclasses, scoped modules, pure functions, mutability
+              rules, tree-shaking, and precise numeric plans.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">OCaml</li>
+              <li class="tag">Rust</li>
+              <li class="tag">LLVM</li>
+              <li class="tag">AI Workflow</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="linux theme">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Boot experience</span>
+                <h3>GRUB Theme</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/albedo-grub-theme" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+
+            </div>
+            <p>
+              A custom GRUB theme for the bootloader layer, keeping the Arch
+              setup visually consistent before the display manager starts.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Linux</li>
+              <li class="tag">GRUB</li>
+              <li class="tag">Theme</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="linux qml shell">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Desktop workflow</span>
+                <h3>Noctalia Shell Plugin</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/noctalia_plugins" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+
+            </div>
+            <p>
+              A shell plugin for Noctalia focused on faster multilingual input
+              switching from the status bar instead of manually opening the
+              Fcitx app.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Linux</li>
+              <li class="tag">Noctalia</li>
+              <li class="tag">QML</li>
+              <li class="tag">Workflow</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="linux theme qml shell">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Shell design system</span>
+                <h3>Noctalia Moon Mist</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/noctalia_moonmist" target="_blank" rel="noopener noreferrer"
+                classs="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+
+            </div>
+            <p>
+              A custom color schema for Noctalia Shell that keeps the desktop
+              palette readable, consistent, and tuned for day-to-day Arch
+              usage.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Linux</li>
+              <li class="tag">Noctalia</li>
+              <li class="tag">QML</li>
+              <li class="tag">Theme</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="systems go full-stack linux parser security">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Stateless web systems</span>
+                <h3>Vichar.Abhivyakti</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/vichar.abhivyakti" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A server-rendered Go textboard concept with stateless
+              architecture, tripcode identity, Markdown sanitization, and
+              outbound redirect warnings for safer anonymous posting.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Go</li>
+              <li class="tag">SSR</li>
+              <li class="tag">Security</li>
+              <li class="tag">Parsing</li>
+            </ul>
+            <a href="https://vichar.abhivyakti.space/" target="_blank" rel="noopener noreferrer" class="project-link">
+              🔗 Try It
+            </a>
+          </article>
+
+          <article class="project-card reveal" data-tags="systems cpp game sfml linux">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Game systems</span>
+                <h3>SFML Smasher</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/smashers_sfml" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A C++/SFML game project built to understand pointers, memory
+              management, and resource constraints with an eye toward small
+              arcade-style systems.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">C++</li>
+              <li class="tag">SFML</li>
+              <li class="tag">Game Dev</li>
+              <li class="tag">Linux</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal" data-tags="python data science research">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Data + research</span>
+                <h3>Directory of Integer Sequences</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/A-directory-of-integer-sequences" target="_blank"
+                rel="noopener noreferrer" class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A Python tool for exploring integer sequences with curated
+              explanations, manipulation utilities, and visualization ideas
+              for students and researchers.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Python</li>
+              <li class="tag">Data Science</li>
+              <li class="tag">Math</li>
+            </ul>
+          </article>
+          <article class="project-card reveal" data-tags="full-stack node postgres accounting backend">
+            <div class="project-top">
+              <div>
+                <span class="project-type">Full stack backend</span>
+                <h3>Accounting & Inventory System</h3>
+              </div>
+              <a href="https://github.com/vinayakgupta29/accounting-node.TS" target="_blank" rel="noopener noreferrer"
+                class="project-link">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+            <p>
+              A business-focused accounting and inventory system with Node.js,
+              TypeScript, PostgreSQL, reporting, purchase-order flows, and
+              stock control.
+            </p>
+            <ul class="tag-row">
+              <li class="tag">Node.js</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">Accounting</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="linux">
+      <div class="site-shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Linux</p>
+            <h2>Daily-driver systems work.</h2>
+          </div>
+          <p>
+            A separate home for Linux-facing projects, setup notes, and system
+            experiments. I kept this section ready to grow as you add
+            dotfiles, scripts, packages, or homelab work.
+          </p>
+        </div>
+
+        <div class="linux-band">
+          <div class="terminal reveal" aria-label="Linux project summary">
+            <div class="terminal-bar" aria-hidden="true">
+              <span class="terminal-dot"></span>
+              <span class="terminal-dot"></span>
+              <span class="terminal-dot"></span>
+            </div>
+            <pre><code>$ whoami
+                vinayak
+
+                $ focus --linux
+                arch workstation notes
+                tauri .deb clients
+                go encryption tooling
+                c++/sfml experiments
+                fcitx input switching
+                qml boot/login themes
+                clean deployment habits
+
+                $ next
+                dotfiles, nvim linting, grub, sddm, plymouth</code></pre>
+          </div>
+
+          <div class="linux-list">
+            <a class="link-card reveal"
+              href="https://vinayakgupta29.github.io/blogs/tech/linux/arch/2025/06/15/arch-experience.html"
+              target="_blank" rel="noopener noreferrer">
+              <strong>Why I Use Arch</strong>
+              <span>Linux writing about your operating system choices and
+                daily-driver thinking.</span>
+            </a>
+            <a class="link-card reveal" href="https://github.com/vinayakgupta29/Zundarth" target="_blank"
+              rel="noopener noreferrer">
+              <strong>Zundarth</strong>
+              <span>Go-based local key-management experiment that fits naturally
+                into Linux system workflows.</span>
+            </a>
+            <a class="link-card reveal" href="#projects">
+              <strong>Tauri Linux Client Work</strong>
+              <span>Native desktop application compilation for POSIX/Linux
+                industrial environments.</span>
+            </a>
+            <a class="link-card reveal" href="#projects">
+              <strong>Arch Desktop DIY</strong>
+              <span>Dotfiles, GRUB themes, SDDM themes, Plymouth themes, and QML
+                shell plugin work.</span>
+            </a>
+            <a class="link-card reveal" href="#projects">
+              <strong>Multilingual Workflow Tools</strong>
+              <span>Status-bar input switching for US, ITRANS Hindi, Japanese,
+                and Sanskrit work without opening Fcitx.</span>
+            </a>
+            <a class="link-card reveal" href="#projects">
+              <strong>Nvim Format Linting</strong>
+              <span>A small Neovim plugin idea for linting a custom
+                personal-record text data format.</span>
+            </a>
+            <a class="link-card reveal" href="https://github.com/vinayakgupta29/smashers_sfml" target="_blank"
+              rel="noopener noreferrer">
+              <strong>SFML Smasher</strong>
+              <span>C++/SFML game systems practice with low-level memory and
+                runtime constraints.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="writing">
+      <div class="site-shell">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Writing</p>
+            <h2>Technical notes and Abhivyakti.</h2>
+          </div>
+          <p>
+            The portfolio also points to your blog and literature so visitors
+            can see the thinking behind the code.
+          </p>
+        </div>
+
+        <div class="writing-grid">
+          <a class="link-card reveal" href="https://vinayakgupta29.github.io/blogs" target="_blank"
+            rel="noopener noreferrer">
+            <strong>Abhivyakti</strong>
+            <span>Blog home for technical, philosophical, and personal
+              writing.</span>
+          </a>
+          <a class="link-card reveal"
+            href="https://vinayakgupta29.github.io/blogs/tech/encryption/flutter/2024/02/03/personal-bahi-khata.html"
+            target="_blank" rel="noopener noreferrer">
+            <strong>Personal Bahi Khata</strong>
+            <span>Notes around encryption and Flutter product work.</span>
+          </a>
+          <a class="link-card reveal"
+            href="https://vinayakgupta29.github.io/blogs/philosophy/poetry/expression/2025/06/22/incredible-india.html"
+            target="_blank" rel="noopener noreferrer">
+            <strong>Incredible India</strong>
+            <span>Personal literature from Abhivyakti.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="site-shell contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something that has a spine.</h2>
+        </div>
+        <div class="panel reveal">
+          <p>
+            Open to development, systems design, product engineering, and
+            technical collaboration across practical software problems.
+          </p>
+          <div class="contact-actions">
+            <a class="button" href="mailto:vinayakg236@gmail.com">vinayakg236@gmail.com</a>
+            <a class="button secondary" href="https://github.com/vinayakgupta29" target="_blank"
+              rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a class="button secondary" href="https://www.linkedin.com/in/vinayak-gupta-70a808202/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+            <a class="button secondary" href="./vinayak_gupta_cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a class="button secondary" href="./VINAYAK%20GUPTA.pdf" target="_blank"
+              rel="noopener noreferrer">Certificate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="site-shell">
+      <span>&copy; 2026 Vinayak Gupta. All rights reserved.</span>
+      <span><a href="./plain.html">Plain HTML version</a> &middot;
+        <a href="#resume-options">Resume options</a></span>
+    </div>
+  </footer>
+
+  <script>
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      {threshold: 0.14},
+    );
+
+    document.querySelectorAll(".reveal").forEach((element, index) => {
+      element.style.transitionDelay = `${Math.min(index % 4, 3) * 70}ms`;
+      revealObserver.observe(element);
+    });
+
+    const filterButtons = document.querySelectorAll("[data-filter]");
+    const projectCards = document.querySelectorAll(".project-card");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+
+        projectCards.forEach((card) => {
+          const tags = card.dataset.tags.split(" ");
+          const shouldShow = filter === "all" || tags.includes(filter);
+          card.classList.toggle("is-hidden", !shouldShow);
         });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

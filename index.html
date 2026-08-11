@@ -148,13 +148,26 @@
       letter-spacing: 0;
     }
 
+    .brand-image,
     .brand-mark {
       display: grid;
       width: 38px;
-      aspect-ratio: 1;
+      height: 38px;
+      flex: 0 0 38px;
       place-items: center;
-      border: 1px solid rgba(54, 214, 181, 0.42);
       border-radius: var(--radius);
+      box-sizing: border-box;
+    }
+
+    .brand-image {
+      object-fit: cover;
+      overflow: hidden;
+      border: 1px solid rgba(54, 214, 181, 0.42);
+      box-shadow: 6px 6px 0 rgba(244, 163, 64, 0.16);
+    }
+
+    .brand-mark {
+      border: 1px solid rgba(54, 214, 181, 0.42);
       background: linear-gradient(135deg,
           rgba(54, 214, 181, 0.16),
           rgba(115, 168, 255, 0.12));
@@ -787,7 +800,10 @@
   <header class="topbar">
     <nav class="site-shell nav" aria-label="Primary navigation">
       <a class="brand" href="./index.html" aria-label="Vinayak Gupta home">
-        <span class="brand-mark">VG</span>
+        <img src="./assets/avatar.jpeg" alt="Vinayak Gupta" class="brand-image"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+
+        <span class="brand-mark" style="display: none;">VG</span>
         <span>Vinayak Gupta</span>
       </a>
       <div class="nav-links">
